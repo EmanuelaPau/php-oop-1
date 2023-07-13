@@ -21,14 +21,14 @@ class Movie
     public $name;
     public $director;
     public $vote;
-    public $sinopsis;
+    public $img;
 
-    function __construct($movieName, $movieDirector, $movieVote, $movieSinopsis)
+    function __construct($movieName, $movieDirector, $movieVote, $movieImg)
     {
         $this->name = $movieName;
         $this->director = $movieDirector;
         $this->vote = $movieVote;
-        $this->sinopsis = $movieSinopsis;
+        $this->img = $movieImg;
     }
     function createId()
     {
@@ -36,4 +36,25 @@ class Movie
     }
 }
 
+var_dump($starWars = new Movie('Episode IV – A New Hope', 'George Lucas', 4.8, 'https://m.media-amazon.com/images/I/81sy+lrM8KL._AC_UF1000,1000_QL80_.jpg'))
+
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>
+            <?php ?>
+        </h1>
+    </main>
+</body>
+
+</html>
