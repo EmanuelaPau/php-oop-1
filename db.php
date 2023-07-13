@@ -1,0 +1,66 @@
+<?php
+$movies = [
+    [
+        'name' => 'Star Wars Episode IV – A New Hope',
+        'director' => 'George Lucas',
+        'year' => 1977,
+        'vote' => 4.8,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode V – The Empire Strikes Back',
+        'director' => 'George Lucas',
+        'year' => 1980,
+        'vote' => 4.6,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/3/3f/The_Empire_Strikes_Back_%281980_film%29.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode VI – Return of the Jedi',
+        'director' => 'George Lucas',
+        'year' => 1983,
+        'vote' => 4.5,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/b/b2/ReturnOfTheJediPoster1983.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode I – The Phantom Menace',
+        'director' => 'George Lucas',
+        'year' => 1999,
+        'vote' => 3.8,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode II – Attack of the Clones',
+        'director' => 'George Lucas',
+        'year' => 2002,
+        'vote' => 3.6,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/3/32/Star_Wars_-_Episode_II_Attack_of_the_Clones_%28movie_poster%29.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode III – Revenge of the Sith',
+        'director' => 'George Lucas',
+        'year' => 2002,
+        'vote' => 3.5,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode VII – The Force Awakens',
+        'director' => 'George Lucas',
+        'year' => 2015,
+        'vote' => 4.0,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode VIII – The Last Jedi',
+        'director' => 'George Lucas',
+        'year' => 2017,
+        'vote' => 3.9,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/7/7f/Star_Wars_The_Last_Jedi.jpg',
+    ],
+    [
+        'name' => 'Star Wars Episode IX – The Rise of Skywalker',
+        'director' => 'George Lucas',
+        'year' => 2019,
+        'vote' => 3.9,
+        'director' => 'https://upload.wikimedia.org/wikipedia/en/a/af/Star_Wars_The_Rise_of_Skywalker_poster.jpg',
+    ],
+];
