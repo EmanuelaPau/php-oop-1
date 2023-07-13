@@ -1,4 +1,6 @@
 <?php
+
+include __DIR__ . '/../db.php';
 class Movie
 {
     public $id;
