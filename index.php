@@ -20,15 +20,17 @@ class Movie
     public $id;
     public $name;
     public $director;
+    public $genre;
     public $vote;
     public $img;
 
-    function __construct($movieName, $movieDirector, $movieVote, $movieImg)
+    function __construct($movieName, $movieDirector, $movieVote, $movieImg, $movieGenre)
     {
         $this->name = $movieName;
         $this->director = $movieDirector;
         $this->vote = $movieVote;
         $this->img = $movieImg;
+        $this->genre = $movieGenre;
     }
     function sayHi()
     {
@@ -36,9 +38,10 @@ class Movie
     }
 }
 
-$starWars = new Movie('Episode IV – A New Hope', 'George Lucas', 4.8, 'https://m.media-amazon.com/images/I/81sy+lrM8KL._AC_UF1000,1000_QL80_.jpg');
+$starWars = new Movie('Episode IV – A New Hope', 'George Lucas', 4.8, 'https://m.media-amazon.com/images/I/81sy+lrM8KL._AC_UF1000,1000_QL80_.jpg', ['Science Fiction']);
 
-var_dump($starWars);
+$indianaJones = new Movie('Indiana Jones', 'George Lucas', 4.5, 'https://m.media-amazon.com/images/I/51SOmIkKbaL._AC_UF894,1000_QL80_.jpg', ['Action', 'Adventure'])
+// var_dump($starWars);
 
 ?>
 
@@ -62,7 +65,33 @@ var_dump($starWars);
         <h3>
             <?php echo $starWars->vote ?>
         </h3>
+        <h4>
+            <?php
+            foreach ($starWars->genre as $item) {
+                echo $item;
+            } ?>
+        </h4>
         <img src="<?php echo $starWars->img ?>" alt="<?php echo $starWars->name ?> poster" />
+
+        <h1>
+            <?php echo $indianaJones->name ?>
+        </h1>
+        <h3>
+            <?php echo $indianaJones->director ?>
+        </h3>
+        <h3>
+            <?php echo $indianaJones->vote ?>
+        </h3>
+        <h4>
+            <?php
+            foreach ($indianaJones->genre as $item) {
+            ?> <span><?php echo $item; ?></span>
+            <?php } ?>
+        </h4>
+        <img src="<?php echo $indianaJones->img ?>" alt="<?php echo $starWars->name ?> poster" />
+
+
+
     </main>
 </body>
 
