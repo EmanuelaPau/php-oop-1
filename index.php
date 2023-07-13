@@ -30,13 +30,15 @@ class Movie
         $this->vote = $movieVote;
         $this->img = $movieImg;
     }
-    function createId()
+    function sayHi()
     {
-        $this->id = rand(0, 999);
+        echo 'hi';
     }
 }
 
-var_dump($starWars = new Movie('Episode IV – A New Hope', 'George Lucas', 4.8, 'https://m.media-amazon.com/images/I/81sy+lrM8KL._AC_UF1000,1000_QL80_.jpg'))
+$starWars = new Movie('Episode IV – A New Hope', 'George Lucas', 4.8, 'https://m.media-amazon.com/images/I/81sy+lrM8KL._AC_UF1000,1000_QL80_.jpg');
+
+var_dump($starWars);
 
 ?>
 
@@ -52,8 +54,15 @@ var_dump($starWars = new Movie('Episode IV – A New Hope', 'George Lucas', 4.8,
 <body>
     <main>
         <h1>
-            <?php ?>
+            <?php echo $starWars->name ?>
         </h1>
+        <h3>
+            <?php echo $starWars->director ?>
+        </h3>
+        <h3>
+            <?php echo $starWars->vote ?>
+        </h3>
+        <img src="<?php echo $starWars->img ?>" alt="<?php echo $starWars->name ?> poster" />
     </main>
 </body>
 
